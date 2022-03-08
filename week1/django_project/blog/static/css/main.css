@@ -1,0 +1,13 @@
+body {
+  padding: 20px;
+  background-image:linear-gradient(to right, rgba(30, 75, 115, 1),  rgba(255, 255, 255, 0));
+}
+ 
+.menu {
+  margin-bottom: 30px;
+  text-align: right;
+}
+ 
+.menu li {
+  display: inline-block;
+}
