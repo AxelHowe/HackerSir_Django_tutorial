@@ -1,0 +1,14 @@
+body {
+  padding: 20px;
+  background-color: antiquewhite;
+}
+
+ 
+.menu {
+  margin-bottom: 30px;
+  text-align: right;
+}
+ 
+.menu li {
+  display: inline-block;
+}

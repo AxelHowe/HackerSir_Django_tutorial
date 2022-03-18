@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %} <!-- 新增 -->
+{% block css %} <!-- 新增 -->
+<link rel="stylesheet" href="{% static  'css/article.css' %}"> <!-- 新增 -->
+{% endblock %} <!-- 新增 -->
+{% block heading %}部落格{% endblock %}
+{% block content %}
+<p>可以在這裡瀏覽文章</p>	
+<hr>
+{% for article in articles %}
+  <h3>{{ article.title }}</h3>
+  <p>發表時間：{{ article.pubDateTime|date:'Y-m-d H:i' }}</p>
+  <div class="articleContent">{{ article.content }}</div>
+  <hr>
+{% endfor %}
+
+{% endblock %}
